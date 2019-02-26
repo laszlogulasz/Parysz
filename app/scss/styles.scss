@@ -282,6 +282,7 @@ li {
 #contact {
 	.form {
 		width: 100%;
+		padding: 0.5em;
 		.floating-label {
 			position: relative;
 			margin: 0 auto 1em auto;
@@ -318,15 +319,12 @@ li {
 		textarea {
 			resize: vertical;
 		}
-
 		.floating-input:focus ~ label,
 		.floating-input:not(:placeholder-shown) ~ label {
 			top: -18px;
 			font-size: 0.75em;
 			color: $secondary-red;
 		}
-
-		/* active state */
 		.floating-input:focus ~ .bar:before,
 		.floating-input:focus ~ .bar:after {
 			width: 50%;
@@ -338,17 +336,32 @@ li {
 			overflow: hidden;
 			overflow-x: hidden;
 		}
-
 		/* active state */
 		.floating-input:focus ~ .highlight {
 			animation: inputHighlighter 0.3s ease;
 		}
-
 		/* animation */
 		@keyframes inputHighlighter {
 			to {
 				width: 0;
 			}
 		}
+	}
+	.contact {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.contact-field {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		img {
+			margin: .5em;
+			width: 45px;
+			max-height: 45px;
+			object-fit: contain;
+		}
+	}
 	}
 }
