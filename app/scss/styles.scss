@@ -1,0 +1,354 @@
+// SIMPLE GRID - SASS/SCSS
+@import "gridlex";
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700");
+
+// fonts
+$font-family: "Fira Sans", Helvetica, sans-serif;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+// colors
+$primary-red: rgba(128, 50, 58, 1);
+$secondary-red: rgba(134, 53, 56, 1);
+$primary-gray: rgba(74, 74, 74, 1);
+$secondary-gray: rgba(216, 216, 216, 1);
+$third-gray: rgba(244, 244, 244, 1);
+$coal: rgba(43, 43, 43, 1);
+$black: #000;
+
+// universal
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 16px;
+	background: #fff;
+	box-sizing: border-box;
+	clear: both;
+}
+
+* {
+	font-family: $font-family;
+	color: $black;
+	line-height: $font-height;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+// typography
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 2rem;
+}
+
+h2 {
+	margin-top: 3em;
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.3125rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+}
+
+p,
+li {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+.font-regular {
+	font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+	font-weight: $font-weight-heavy;
+}
+
+// utility
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.hidden-sm {
+	display: none;
+}
+.container {
+	max-width: 72em;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+.cta {
+	display: flex;
+	align-self: flex-start;
+	border: none;
+	border-radius: 3px;
+	background: $primary-red;
+	color: #fff;
+	font-size: 1em;
+	margin: 2em 0;
+	padding: 0.65em 4.5em;
+	letter-spacing: 0.05em;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+	text-decoration: none;
+}
+
+.long {
+	padding: 0.65em 6.5em;
+}
+.full {
+	padding: 0.65em;
+	width: 100%;
+	display: block;
+}
+
+.semititle {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.desc {
+	font-size: 18px;
+	color: $primary-gray;
+	margin: 0 0 2em 0;
+}
+.nav {
+	margin-top: 1.5em;
+	img {
+		object-fit: contain;
+		max-width: 160px;
+	}
+	.menu {
+		display: flex;
+		list-style: none;
+		justify-content: flex-end;
+		.nav__elem {
+			margin-left: 1.8em;
+			a {
+				text-decoration: none;
+				transition: 300ms;
+				border-bottom: 1px solid transparent;
+			}
+			a:hover {
+				border-color: black;
+			}
+		}
+	}
+}
+
+.header {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-shrink: 1;
+		.break {
+			display: block;
+		}
+		p {
+			font-size: 1.25rem;
+
+			margin: 0.5em 0;
+		}
+	}
+	.header__img {
+		display: flex;
+		justify-content: flex-end;
+		flex-shrink: 2;
+		img {
+			max-width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+}
+
+.features {
+	margin-bottom: 2em;
+	h3 {
+		margin: 0;
+	}
+	img {
+		height: 45px;
+	}
+	p {
+		color: $primary-gray;
+	}
+}
+
+#projects {
+	.figures {
+		.project {
+			margin: 0 auto 3em;
+			max-width: 350px;
+			flex-shrink: 1;
+			img {
+				width: 100%;
+				max-width: 350px;
+				height: auto;
+			}
+			figcaption {
+				display: flex;
+				flex-direction: column;
+
+				p {
+					margin-bottom: 0.2em;
+					color: $secondary-red;
+				}
+				small {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+#process {
+	.steps {
+		//margin: 0 -1em;
+		display: flex;
+		.step {
+			margin: 0 auto 3em;
+			.block {
+				display: flex;
+				flex-shrink: 1;
+				width: 90%;
+				height: 90%;
+				max-width: 255px;
+				height: 200px;
+				background: $secondary-gray;
+				margin-bottom: 1em;
+			}
+			figcaption {
+				display: flex;
+				flex-direction: column;
+
+				h3 {
+					margin: 0;
+				}
+				p {
+					color: $coal;
+					padding-right: 3em;
+				}
+			}
+		}
+	}
+}
+
+#references {
+	.references {
+		.reference {
+		}
+	}
+}
+
+#contact {
+	.form {
+		width: 100%;
+		.floating-label {
+			position: relative;
+			margin: 0 auto 1em auto;
+			width: 100%;
+		}
+		.floating-input {
+			font-size: 1em;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 2em;
+			color: $coal;
+			border: none;
+			border-bottom: 1px solid $secondary-red;
+		}
+
+		.floating-input:focus {
+			outline: none;
+			border-bottom: 2px solid $secondary-red;
+		}
+		legend {
+			font-size: 1.3125rem;
+			font-weight: $font-weight-heavy;
+		}
+		label {
+			color: $secondary-red;
+			font-size: 0.875em;
+			font-weight: normal;
+			position: absolute;
+			pointer-events: none;
+			top: 0.2em;
+			transition: 0.2s ease all;
+		}
+		textarea {
+			resize: vertical;
+		}
+
+		.floating-input:focus ~ label,
+		.floating-input:not(:placeholder-shown) ~ label {
+			top: -18px;
+			font-size: 0.75em;
+			color: $secondary-red;
+		}
+
+		/* active state */
+		.floating-input:focus ~ .bar:before,
+		.floating-input:focus ~ .bar:after {
+			width: 50%;
+		}
+
+		.floating-textarea {
+			min-height: 30px;
+			max-height: 260px;
+			overflow: hidden;
+			overflow-x: hidden;
+		}
+
+		/* active state */
+		.floating-input:focus ~ .highlight {
+			animation: inputHighlighter 0.3s ease;
+		}
+
+		/* animation */
+		@keyframes inputHighlighter {
+			to {
+				width: 0;
+			}
+		}
+	}
+}
