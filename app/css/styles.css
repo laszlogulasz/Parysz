@@ -1664,26 +1664,28 @@ li {
       font-size: 12px; }
 
 #process .steps {
-  display: flex; }
-  #process .steps .step {
-    margin: 0 auto 3em; }
-    #process .steps .step .block {
-      display: flex;
-      flex-shrink: 1;
-      width: 90%;
-      height: 90%;
-      max-width: 255px;
-      height: 200px;
-      background: #d8d8d8;
-      margin-bottom: 1em; }
-    #process .steps .step figcaption {
-      display: flex;
-      flex-direction: column; }
-      #process .steps .step figcaption h3 {
-        margin: 0; }
-      #process .steps .step figcaption p {
-        color: #2b2b2b;
-        padding-right: 3em; }
+  margin-bottom: 2em; }
+  #process .steps h3 {
+    margin: 0; }
+  #process .steps img {
+    height: 95px;
+    object-fit: contain;
+    margin-bottom: .5em; }
+  #process .steps p {
+    color: #2b2b2b; }
+  #process .steps div:last-child img {
+    padding-top: 2em;
+    z-index: 0; }
+  #process .steps div:last-child:before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/clean.png");
+    background-size: 3em 3rem;
+    margin-left: 3.5em;
+    margin-top: -.7em;
+    width: 3em;
+    height: 3em;
+    z-index: 10; }
 
 #contact .form {
   width: 100%;
