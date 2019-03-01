@@ -1,5 +1,7 @@
 // SIMPLE GRID - SASS/SCSS
 @import "gridlex";
+@import "modal";
+@import "swiper";
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700");
 
@@ -242,38 +244,40 @@ li {
 
 #process {
 	.steps {
-		//margin: 0 -1em;
-		display: flex;
-		.step {
-			margin: 0 auto 3em;
-			.block {
-				display: flex;
-				flex-shrink: 1;
-				width: 90%;
-				height: 90%;
-				max-width: 255px;
-				height: 200px;
-				background: $secondary-gray;
-				margin-bottom: 1em;
-			}
-			figcaption {
-				display: flex;
-				flex-direction: column;
-
-				h3 {
-					margin: 0;
-				}
-				p {
-					color: $coal;
-					padding-right: 3em;
-				}
-			}
+		margin-bottom: 2em;
+		h3 {
+			margin: 0;
+		}
+		img {
+			height: 95px;
+			object-fit: contain;
+			margin-bottom: .5em;
+		}	
+		p {
+			color: $coal;
+		}
+		div:last-child img {
+			padding-top: 2em;
+			z-index: 0;
+		}
+		div:last-child:before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/clean.png');
+			background-size: 3em 3rem;
+			margin-left: 3.5em;
+			margin-top: -.7em;
+			width: 3em;
+			height: 3em;
+			z-index: 10;
 		}
 	}
+	 
 }
 
 #references {
 	.references {
+		width: 90%;
 		.reference {
 		}
 	}
@@ -352,16 +356,47 @@ li {
 		display: flex;
 		justify-content: space-between;
 		.contact-field {
-
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		img {
-			margin: .5em;
-			width: 45px;
-			max-height: 45px;
-			object-fit: contain;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			img {
+				margin: .5em;
+				width: 45px;
+				max-height: 45px;
+				object-fit: contain;
+			}
 		}
 	}
-	}
 }
+
+
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.swiper-container, .swiper-container1 {
+	
+}
+// .swiper-slide {
+// 	text-align: center;
+// 	font-size: 18px;
+// 	background: #000;
+// }
+// .swiper-slide img {
+// 	width: auto;
+// 	height: auto;
+// 	max-width: 100%;
+// 	max-height: 100%;
+// 	-ms-transform: translate(-50%, -50%);
+// 	-webkit-transform: translate(-50%, -50%);
+// 	-moz-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// 	position: absolute;
+// 	left: 50%;
+// 	top: 50%;
+// }	
