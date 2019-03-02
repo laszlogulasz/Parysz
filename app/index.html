@@ -222,27 +222,51 @@
 				<section class="grid" id="references">
 					<h2 class="col-12">Referencje</h2>
 					<div class="grid references">
-						<div class="second swiper-container" id="first">
-							<!-- Additional required wrapper -->
+						<div class="swiper-container ref" id="first">
 							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide">Slide 1<br />sfdsf<br /></div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
+								<div class="swiper-slide">
+									<blockquote>
+										<em
+											><p>
+												Wracam do Pane Jerzego regularnie! Jak tylko potrzebuję
+												czegoś związanego z meglami, drewnem, fachowej porady.
+												Nigdy się nie zawiodłam!
+											</p></em
+										>
+									</blockquote>
+									<h3>Anna Jelonek</h3>
+									<p>graficzka</p>
+								</div>
+								<div class="swiper-slide">
+									<blockquote>
+										<em
+											><p>
+												Wracam do Pane Jerzego regularnie! Jak tylko potrzebuję
+												czegoś związanego z meglami, drewnem, fachowej porady.
+												Nigdy się nie zawiodłam!
+											</p></em
+										>
+									</blockquote>
+									<h3>Anna Jelonek</h3>
+									<p>graficzka</p>
+								</div>
+								<div class="swiper-slide">
+									<blockquote>
+										<em
+											><p>
+												Wracam do Pane Jerzego regularnie! Jak tylko potrzebuję
+												czegoś związanego z meglami, drewnem, fachowej porady.
+												Nigdy się nie zawiodłam!
+											</p></em
+										>
+									</blockquote>
+									<h3>Anna Jelonek</h3>
+									<p>graficzka</p>
+								</div>
 							</div>
-							<!-- If we need pagination -->
-							<div class="swiper-pagination"></div>
-
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-
-							<!-- If we need scrollbar -->
-							<div class="swiper-scrollbar"></div>
 						</div>
+						<div class="swiper-pagination"></div>
 					</div>
-
-					<div class="grid references"></div>
 				</section>
 				<!-- FORM -->
 				<section class="grid" id="contact">
@@ -314,7 +338,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="grid">
+					<div class="grid contact">
 						<h3 class="col-12">Jak nas znaleźć</h3>
 						<iframe
 							class="col-12"
@@ -329,7 +353,7 @@
 				</section>
 			</main>
 		</div>
-		<button data-custom-open="modal-1">open</button>
+
 		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
 			<div class="modal__overlay" tabindex="-1" data-custom-close>
 				<div
@@ -339,23 +363,14 @@
 					aria-labelledby="modal-1-title"
 				>
 					<header class="modal__header">
-						<h2 class="modal__title" id="modal-1-title">
-							Micromodal
-						</h2>
 						<button
 							class="modal__close"
 							aria-label="Close modal"
 							data-custom-close
 						></button>
 					</header>
-					<main class="modal__content" id="modal-1-content">
-						<p>
-							Try hitting the <code>tab</code> key and notice how the focus
-							stays within the modal itself. Also, <code>esc</code> to close
-							modal.
-						</p>
-					</main>
-					<div class="first swiper-container" id="second">
+					<main class="modal__content" id="modal-1-content"></main>
+					<div class="second swiper-container">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
@@ -386,6 +401,137 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-custom-close>
+				<div
+					class="modal__container"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="modal-1-title"
+				>
+					<header class="modal__header">
+						<button
+							class="modal__close"
+							aria-label="Close modal"
+							data-custom-close
+						></button>
+					</header>
+					<main class="modal__content" id="modal-1-content"></main>
+					<div class="second swiper-container">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/800/people/1)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/2)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/3)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/4)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/5)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/6)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/7)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/8)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/9)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/people/10)"
+							></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-custom-close>
+				<button
+					class="modal__close"
+					aria-label="Close modal"
+					data-custom-close
+				></button>
+				<div
+					class="modal__container"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="modal-1-title"
+				>
+					<header class="modal__header"></header>
+					<main class="modal__content" id="modal-1-content"></main>
+					<div class="second swiper-container">
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/1)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/2)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/3)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/4)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/5)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/6)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/7)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/8)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/9)"
+							></div>
+							<div
+								class="swiper-slide"
+								style="background-image:url(http://lorempixel.com/600/400/nature/10)"
+							></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!--build:js js/main.min.js -->
 		<script src="js/lib/micromodal.min.js"></script>
 		<script src="js/lib/swiper.min.js"></script>

@@ -80,6 +80,10 @@ li {
 	font-size: 1rem;
 	font-weight: 200;
 }
+q, 
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
 
 .font-regular {
 	font-weight: $font-weight-regular;
@@ -217,6 +221,7 @@ li {
 
 #projects {
 	.figures {
+		margin: 0 .5em;
 		.project {
 			margin: 0 auto 3em;
 			max-width: 350px;
@@ -277,11 +282,59 @@ li {
 
 #references {
 	.references {
-		width: 90%;
-		.reference {
+		width: 100%;
+		margin: .5em;
+		.swiper-container {
+      width: 100%;
+			height: 260px;
+			
+    }
+    .swiper-slide {
+			padding: 2em;
+			background: $third-gray;
+			max-width: 350px;
+      /* Center slide text vertically */
+      display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			p {
+				display: inline;
+				color: $primary-gray;
+			}	
+			blockquote, p {	
+				margin: 0;
+			}
+			p::first-letter {
+				color: $primary-gray;
+			}
+			q:before,	blockquote:before {
+				content: open-quote;
+				margin-left: -.7em;
+				margin-right: 0;
+				color: $primary-gray;
+			}
+				q:after, blockquote:after {
+				content: close-quote;
+			color: $primary-gray;
+			}	
+			h3 {
+				margin: 2em  0 0 0;
+			}		
 		}
-	}
+		.swiper-pagination {
+			position: relative;
+			top: 1.5em;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			z-index: 100;
+			& > * {
+				margin: 1.5em;
+			}
+		}
+	}	
 }
+
 
 #contact {
 	.form {
@@ -355,6 +408,7 @@ li {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		padding-left: .5em;
 		.contact-field {
 			display: flex;
 			flex-direction: row;
@@ -372,22 +426,25 @@ li {
 
 
 .modal {
-  display: none;
+	display: none;
+	.swiper-container {	
+		width: 100%;
+		height: 500px;
+	}
+	
+	.swiper-slide {
+		background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+	}
 }
 
 .modal.is-open {
   display: block;
 }
 
-.swiper-container, .swiper-container1 {
-	
-}
-// .swiper-slide {
-// 	text-align: center;
-// 	font-size: 18px;
-// 	background: #000;
-// }
-// .swiper-slide img {
+
+// .swiper-slide{
 // 	width: auto;
 // 	height: auto;
 // 	max-width: 100%;
@@ -399,4 +456,4 @@ li {
 // 	position: absolute;
 // 	left: 50%;
 // 	top: 50%;
-// }	
+// }
