@@ -229,6 +229,7 @@ blockquote {
 #projects {
 	.figures {
 		margin: 0;
+		justify-content: space-between;
 		@media screen and (max-width:48em) {	
 		justify-content: center;
 			}	
@@ -431,7 +432,29 @@ blockquote {
 	}
 }
 
-
+footer {
+	margin: 10em 0 3em 0;
+	picture {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	img {
+		width: 174px;
+		}
+	}
+	.footer-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: .5em;
+		flex-wrap: wrap;
+		
+		.seo {
+			flex-wrap: nowrap;
+			color: $primary-red;
+		}
+	}
+}
 
 .modal {
 	display: none;

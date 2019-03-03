@@ -2416,7 +2416,8 @@ blockquote {
     color: #4a4a4a; }
 
 #projects .figures {
-  margin: 0; }
+  margin: 0;
+  justify-content: space-between; }
   @media screen and (max-width: 48em) {
     #projects .figures {
       justify-content: center; } }
@@ -2570,6 +2571,24 @@ blockquote {
       width: 45px;
       max-height: 45px;
       object-fit: contain; }
+
+footer {
+  margin: 10em 0 3em 0; }
+  footer picture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    footer picture img {
+      width: 174px; }
+  footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: .5em;
+    flex-wrap: wrap; }
+    footer .footer-content .seo {
+      flex-wrap: nowrap;
+      color: #80323a; }
 
 .modal {
   display: none; }
