@@ -130,7 +130,7 @@ blockquote {
 	color: #fff;
 	font-size: 1em;
 	margin: 2em 0;
-	padding: 0.65em 4.5em;
+	padding: 0.65em 2.5em;
 	letter-spacing: 0.05em;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
 	text-decoration: none;
@@ -188,21 +188,28 @@ blockquote {
 		.break {
 			display: block;
 		}
+		
 		p {
 			font-size: 1.25rem;
 
-			margin: 0.5em 0;
+			margin: .5em .5em 0 0;
+		}
+		.cta {
+			margin-top: 5em;
 		}
 	}
-	.header__img {
-		display: flex;
-		justify-content: flex-end;
-		flex-shrink: 2;
-		img {
-			max-width: 100%;
-			height: auto;
-			object-fit: contain;
-		}
+	.swiper-container {
+		width: 100%;
+		height: 620px;
+	}
+	.swiper-slide {
+		background-position: right;
+		background-size: 420px 620px;
+		background-repeat: no-repeat;
+		@media screen and (max-width:48em) {
+		background-position: center;
+		background-size: contain;
+		}	
 	}
 }
 
@@ -221,9 +228,12 @@ blockquote {
 
 #projects {
 	.figures {
-		margin: 0 .5em;
+		margin: 0;
+		@media screen and (max-width:48em) {	
+		justify-content: center;
+			}	
 		.project {
-			margin: 0 auto 3em;
+			margin: 0 0 3em 0;
 			max-width: 350px;
 			flex-shrink: 1;
 			img {
@@ -277,7 +287,6 @@ blockquote {
 			z-index: 10;
 		}
 	}
-	 
 }
 
 #references {
@@ -286,40 +295,39 @@ blockquote {
 		margin: .5em;
 		.swiper-container {
       width: 100%;
-			height: 260px;
+			height: 249px;
 			
     }
-    .swiper-slide {
-			padding: 2em;
+    .swiper-slide {	
+			padding: 2.9em;
 			background: $third-gray;
 			max-width: 350px;
-      /* Center slide text vertically */
       display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			p {
-				display: inline;
+			blockquote {
 				color: $primary-gray;
-			}	
-			blockquote, p {	
 				margin: 0;
+				line-height: 1.2em;
+				font-style: italic;
+				&:before {
+					content: '\201C';
+					position: absolute;
+					top: 3em;
+					left: 2.2em;
+				}
 			}
-			p::first-letter {
+			p {
+				line-height: 1.2em;
+				margin: 0;
 				color: $primary-gray;
+				&:first-child:after {
+					content: '\201D';
+				}
 			}
-			q:before,	blockquote:before {
-				content: open-quote;
-				margin-left: -.7em;
-				margin-right: 0;
-				color: $primary-gray;
-			}
-				q:after, blockquote:after {
-				content: close-quote;
-			color: $primary-gray;
-			}	
 			h3 {
-				margin: 2em  0 0 0;
-			}		
+				margin: 1em 0 0 0;
+			}
 		}
 		.swiper-pagination {
 			position: relative;
@@ -329,10 +337,10 @@ blockquote {
 			width: 100%;
 			z-index: 100;
 			& > * {
-				margin: 1.5em;
+				margin: 1.3em;
 			}
 		}
-	}	
+	}
 }
 
 
@@ -443,17 +451,3 @@ blockquote {
   display: block;
 }
 
-
-// .swiper-slide{
-// 	width: auto;
-// 	height: auto;
-// 	max-width: 100%;
-// 	max-height: 100%;
-// 	-ms-transform: translate(-50%, -50%);
-// 	-webkit-transform: translate(-50%, -50%);
-// 	-moz-transform: translate(-50%, -50%);
-// 	transform: translate(-50%, -50%);
-// 	position: absolute;
-// 	left: 50%;
-// 	top: 50%;
-// }
