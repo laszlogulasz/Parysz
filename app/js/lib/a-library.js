@@ -23,12 +23,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				disableScroll: true,
 				onShow: modal => {
 					const swiperContainer = modal.querySelector('.second');
-					const swiper = new Swiper(swiperContainer, {
-						navigation: {
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev"
-						}
-					});
+					const swiper = swiperContainer.swiper ?
+						swiperContainer.swiper :
+						new Swiper(swiperContainer, {
+							navigation: {
+								nextEl: ".swiper-button-next",
+								prevEl: ".swiper-button-prev"
+							}
+						});
 					swiper.update()
 				},
 				closeTrigger: "data-custom-close",
