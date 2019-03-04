@@ -18,28 +18,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	const projects = document.querySelectorAll(".project");
 	projects.forEach((project, i) => {
-		const projectsSwiper = new Swiper(".second", {
-			init: false,
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev"
-			}
-		});
-
 		project.addEventListener("click", () => {
 			MicroModal.show(`modal-${i + 1}`, {
-				debugMode: true,
 				disableScroll: true,
-				onShow: modal => projectsSwiper[i].init(),
-
+				onShow: modal => {
+					const swiperContainer = modal.querySelector('.second');
+					const swiper = new Swiper(swiperContainer, {
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev"
+						}
+					});
+					swiper.update()
+				},
 				closeTrigger: "data-custom-close",
 				awaitCloseAnimation: true
 			});
-			setTimeout(function() {
-				projectsSwiper[i].update();
-			}, 10);
 		});
-
-		console.log("TCL: projectsSwiper", projectsSwiper);
 	});
 });
