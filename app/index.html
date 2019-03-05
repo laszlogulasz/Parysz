@@ -1,632 +1,713 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title></title>
-		<!--build:css css/styles.min.css-->
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/print.css" />
-		<!--endbuild-->
-	</head>
+<html lang="pl">
 
-	<body>
-		<div class="container">
-			<!-- NAV -->
-			<nav class="grid nav">
-				<picture class="col-4_sm-12 logo">
-					<img src="images/logo.png" alt="parysz logo" />
-				</picture>
-				<ul class="col-8_sm-12 menu">
-					<li class="nav__elem"><a href="#features">Pracownia</a></li>
-					<li class="nav__elem"><a href="#projects">Galeria</a></li>
-					<li class="nav__elem"><a href="#process">Proces</a></li>
-					<li class="nav__elem"><a href="#references">Referencje</a></li>
-					<li class="nav__elem"><a href="#contact">Kontakt</a></li>
-				</ul>
-			</nav>
-			<!-- HEADER -->
-			<header class="grid header">
-				<div class="col-6_sm-12 hero">
-					<h1>
-						<span class="break">Pracownia Mebli</span>
-						Jerzy Parysz
-					</h1>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="Pracownia ręcznie wykonywanych, rzemieślniczych mebli na zamówienie." />
+	<title>Jerzy Parysz - pracownia mebli</title>
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/styles.css" />
+	<!--endbuild-->
+</head>
+
+<body>
+	<div class="container">
+		<!-- NAV -->
+		<nav class="grid nav">
+			<picture class="col-4_sx-12 logo">
+				<img src="images/logo.png" alt="parysz logo" />
+			</picture>
+			<button class="hamburger burger hamburger--3dx type=" button" tabindex="0" role="button">
+				<span class="hamburger-label">Menu</span>
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<ul class="col-8_sx-12 menu">
+				<li class="nav__elem"><a href="#features">Pracownia</a></li>
+				<li class="nav__elem"><a href="#projects">Galeria</a></li>
+				<li class="nav__elem"><a href="#process">Proces</a></li>
+				<li class="nav__elem"><a href="#references">Referencje</a></li>
+				<li class="nav__elem"><a href="#contact">Kontakt</a></li>
+				<aside class="grid">
+					<p>Pracownia Mebli<br>Jerzy Parysz</p>
+					<p><a href="tel:+48506148099">+48 506 148 099</a><br><a href="mailto:biuro@parysz.pl">biuro@parysz.pl</a>
+					</p>
+				</aside>
+			</ul>
+
+		</nav>
+		<!-- HEADER -->
+		<header class="grid header">
+			<div class="col-6_sm-12 hero">
+				<h1>
+					<span class="break">Pracownia Mebli</span>
+					Jerzy Parysz
+				</h1>
+				<p>
+					Tworzymy ręcznie robione meble na zamówienie od 1984 roku.
+					Podejmujemy nietypowe wyzwania, cenimy klasyczne realizacje,
+					wykonujemy wymagające renowacje.
+				</p>
+				<a class="cta" href="#contact">Zamów wycenę swojego projektu</a>
+			</div>
+			<div class="col-6_sm-12">
+				<div class="swiper-container" id="headerSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(./images/main/main_01.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_01.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_03.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_04.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_05.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_06.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_07.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_08.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(./images/main/main_09.jpg)"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- MAIN -->
+		<main>
+			<section class="grid" id="features">
+				<h2 class="col-12">Kilka słów o pracowni</h2>
+				<div class="col-4_sm-12 features">
+					<img src="images/006-chisel-1.png" alt="ikona dłuta" />
+					<h3>Początki</h3>
 					<p>
-						Tworzymy ręcznie robione meble na zamówienie od 1984 roku.
-						Podejmujemy nietypowe wyzwania, cenimy klasyczne realizacje,
-						wykonujemy wymagające renowacje.
+						Pracownia powstała w 1991 roku na obrzerzach Warszawy. Od tamtej
+						pory zmieniło się wiele w naszej branży.
 					</p>
-					<a class="cta" href="#contact">Zamów wycenę swojego projektu</a>
 				</div>
-				<div class="col-6_sm-12">
-					<div class="swiper-container" id="headerSwiper">
+				<div class="col-4_sm-12 features">
+					<img src="images/005-chisel.png" alt="ikona dłuta" />
+					<h3>Realizacje</h3>
+					<p>
+						Ciężko zliczyć, ile projektów wykonaliśmy do tej pory, ale na
+						pewno liczba ta nie jest mniejsza niż 500. Pracujemy nad tym 24h.
+					</p>
+				</div>
+				<div class="col-4_sm-12 features">
+					<img src="images/004-measuring-tape.png" alt="ikona miarka" />
+					<h3>Technologie</h3>
+					<p>
+						Cenimy sobie tradycję i prawdziwe rzemiosło, lecz nie stronimy od
+						najnowszych technologii. Każdy projekt jest wykonywany przez nas
+						ręcznie, a proces wytwórczy dobierany indywidualnie.
+					</p>
+				</div>
+				<div class="col-4_sm-12 features">
+					<img src="images/007-toolbox.png" alt="ikona skrzynka" />
+					<h3>Jakość</h3>
+					<p>
+						Nasze meble to nie IKEA. Zamówiony u nas stół jest stołem, który
+						będzie w Państwa rodzinie przez dosłownie pokolenia.
+					</p>
+				</div>
+				<div class="col-4_sm-12 features">
+					<img src="images/002-caliper.png" alt="ikona suwmiarka" />
+					<h3>Współpraca</h3>
+					<p>Ściśle współpracujemy z projektantami oraz budowlańcami itd.</p>
+				</div>
+				<div class="col-4_sm-12 features">
+					<img src="images/001-wood.png" alt="ikona deski" />
+					<h3>Klienci</h3>
+					<p>
+						W przeciągu naszej działaności robiliśmy projekty prywatne,
+						państwowe, dla korporacji, a nawet warszawskich tramwajów!
+					</p>
+				</div>
+			</section>
+			<!-- PROJECTS -->
+			<section class="grid" id="projects">
+				<h2 class="col-12">Wybrane realizacje</h2>
+				<p class="col-6_sm-12 desc">
+					Wybraliśmy parę realizacji, które najlepiej naszym zdaniem
+					odzwierciedlają różnorodność prac, jakich się podjemujemy.
+				</p>
+				<div class="grid figures">
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_01.jpg" alt="kuchnia" />
+						<figcaption>
+							<p>Jesionowa zabudowa kuchni</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_02.jpg" alt="kuchnia" />
+						<figcaption>
+							<p>Jasna kuchnia sosnowa</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_03.jpg" alt="gabinet" />
+						<figcaption>
+							<p>Dębowy gabinet</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_04.jpg" alt="stołek" />
+						<figcaption>
+							<p>Stołek konkursowy - stool</p>
+							<small>Projektant: Agnieszka Błąkowska</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_05.jpg" alt="" />
+						<figcaption>
+							<p>Dębowy mebel wystawowy</p>
+							<small>Projektant: Katarzyna Dzięcioł Korbado</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_06.jpg" alt="" />
+						<figcaption>
+							<p>Orzechowy stół modułowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_07.jpg" alt="" />
+						<figcaption>
+							<p>Komplet gabinetowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_08.jpg" alt="" />
+						<figcaption>
+							<p>Dębowa zabudowa łazienki</p>
+							<small>Projektant: Robert Żbikowski</small>
+						</figcaption>
+					</figure>
+					<figure class="col-4_sm-12 project">
+						<img src="./images/main/main_09.jpg" alt="" />
+						<figcaption>
+							<p>Dworek Jesionowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			<div class="grid-3-center">
+				<a class="cta long" href="#contact">Skonsultuj swój projekt</a>
+			</div>
+			<!-- PROCESS -->
+			<section class="grid" id="process">
+				<h2 class="col-12">Proces</h2>
+				<p class="col-6_sm-12 desc">
+					Nasze meble tworzymy na zamówienie, dlatego podchodzimy do każdego
+					zlecenia indywidualnie. Nasz sprawdzony przez lata proces zapewnia
+					nam ich sprawną realizację.
+				</p>
+				<div class="grid_col-12 steps">
+					<div class="col-3_sm-12 step">
+						<img src="images/blueprint.png" alt="blueprint icon"  />
+						<h3>Opisz swój projekt</h3>
+						<p>
+							Zbieramy jak największą ilości informacji o zleceniu, na
+							podstawie których przygotowujemy wycenę. Po pierwszym kontakcie
+							jesteśmy w określić rodzaj projektu oraz oszacować czas jego
+							realizacji.
+						</p>
+					</div>
+					<div class="col-3_sm-12 step">
+						<img src="images/contract.png" alt="contract icon" />
+						<h3>Złóż zamówienie</h3>
+						<p>
+							Po uzgodnieniu zakresu zlecenia, materiałów, a także kosztów
+							realizacji, spiszemy umowę, która określi warunki współpracy, na
+							podstawie której przystąpimy do działania.
+						</p>
+					</div>
+					<div class="col-3_sm-12 step">
+						<img src="images/005-chisel.png" alt="contract icon" />
+						<h3>Proces rzemiosła</h3>
+						<p>
+							Na tym etapie zajmujemy się tym, co kochamy najbardziej, czyli
+							wcielaniu projektu w życie. Dokładamy wszelkich starań, aby
+							stworzyć za każdym razem coś wyjątkowego.
+						</p>
+					</div>
+					<div class="col-3_sm-12 step">
+						<img src="images/bed.png" alt="contract icon" />
+						<h3>Twoje nowe meble</h3>
+						<p>
+							Gotowe zamówienie bezpiecznie przewozimy w docelowe miejsce.<br />W
+							przypadku całych zabudów, przyjeżdżamy w ustalonym<br />
+							terminie i dokonujemy montażu na miejscu.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- REFERENCES -->
+			<section class="grid" id="references">
+				<h2 class="col-12">Referencje</h2>
+				<p class="col-6_sm-12 desc sec">
+					Poprosiliśmy paru naszych klientów, o podzielenie się opinią na temat oferowanych przez nas usług.
+				</p>
+				<div class="grid references">
+					<div class="swiper-container ref" id="first">
 						<div class="swiper-wrapper">
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/1)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/2)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/3)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/4)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/5)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/6)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/7)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/8)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/420/620/people/9)"
-							></div>
-						</div>
-					</div>
-				</div>
-			</header>
-			<!-- MAIN -->
-			<main>
-				<section class="grid" id="features">
-					<h2 class="col-12">Kilka słów o pracowni</h2>
-					<div class="col-4_sm-12 features">
-						<img src="images/006-chisel-1.png" alt="chisel icon" />
-						<h3>Początki</h3>
-						<p>
-							Pracownia powstała w 1991 roku na obrzerzach Warszawy. Od tamtej
-							pory zmieniło się wiele w naszej branży.
-						</p>
-					</div>
-					<div class="col-4_sm-12 features">
-						<img src="images/005-chisel.png" alt="chisel icon" />
-						<h3>Realizacje</h3>
-						<p>
-							Ciężko zliczyć, ile projektów wykonaliśmy do tej pory, ale na
-							pewno liczba ta nie jest mniejsza niż 500. Pracujemy nad tym 24h.
-						</p>
-					</div>
-					<div class="col-4_sm-12 features">
-						<img src="images/004-measuring-tape.png" alt="toolbox icon" />
-						<h3>Technologie</h3>
-						<p>
-							Cenimy sobie tradycję i prawdziwe rzemiosło, lecz nie stronimy od
-							najnowszych technologii. Każdy projekt jest wykonywany przez nas
-							ręcznie, a proces wytwórczy dobierany indywidualnie.
-						</p>
-					</div>
-					<div class="col-4_sm-12 features">
-						<img src="images/007-toolbox.png" alt="toolbox icon" />
-						<h3>Jakość</h3>
-						<p>
-							Nasze meble to nie IKEA. Zamówiony u nas stół jest stołem, który
-							będzie w Państwa rodzinie przez dosłownie pokolenia.
-						</p>
-					</div>
-					<div class="col-4_sm-12 features">
-						<img src="images/002-caliper.png" alt="caliper icon" />
-						<h3>Współpraca</h3>
-						<p>Ściśle współpracujemy z projektantami oraz budowlańcami itd.</p>
-					</div>
-					<div class="col-4_sm-12 features">
-						<img src="images/001-wood.png" alt="wood icon" />
-						<h3>Klienci</h3>
-						<p>
-							W przeciągu naszej działaności robiliśmy projekty prywatne,
-							państwowe, dla korporacji, a nawet warszawskich tramwajów!
-						</p>
-					</div>
-				</section>
-				<!-- PROJECTS -->
-				<section class="grid" id="projects">
-					<h2 class="col-12">Wybrane realizacje</h2>
-					<p class="col-6_sm-12 desc">
-						Wybraliśmy parę realizacji, które najlepiej naszym zdaniem
-						odzwierciedlają różnorodność prac, jakich się podjemujemy.
-					</p>
-					<div class="grid figures">
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-						<figure class="col-4_sm-12 project">
-							<img src="https://picsum.photos/350/260" alt="" />
-							<figcaption>
-								<p>Salon dębowy na Żoliborzu</p>
-								<small>Projektant: Jarek Tomaszewski</small>
-							</figcaption>
-						</figure>
-					</div>
-				</section>
-				<div class="grid-3-center">
-					<a class="cta long" href="#contact">Skonsultuj swój projekt</a>
-				</div>
-				<!-- PROCESS -->
-				<section class="grid" id="process">
-					<h2 class="col-12">Proces</h2>
-					<p class="col-6_sm-12 desc">
-						Do każdego zamówienia podchodzimy bardzo indywidualnie, jednak
-						proces wypracowany przez tyle lat doświadczenia pozostaje
-						niezmienny, a wygląda następująco.
-					</p>
-					<div class="grid_col-12 steps">
-						<div class="col-3_sm-12 step">
-							<img src="images/blueprint.png" alt="blueprint icon" width="95" />
-							<h3>Zapytnanie</h3>
-							<p>
-								Po pierwszym kontakcie jesteśmy w stanie określić rodzaj
-								projektu oraz szacowany czas. Prosimy o dostarczenie jak
-								największej ilości informacji o danym zleceniu, na podstawie
-								której przygotowujemy dla Państwa wycenę.
-							</p>
-						</div>
-						<div class="col-3_sm-12 step">
-							<img src="images/contract.png" alt="contract icon" />
-							<h3>Umowa</h3>
-							<p>
-								Po uzgodnieniu kosztów materiałów, kosztów wykonania, terminów,
-								materiałów oraz zakresu prac, spisujemy umowę, na podstawie
-								której przystępujemy do działania!
-							</p>
-						</div>
-						<div class="col-3_sm-12 step">
-							<img src="images/005-chisel.png" alt="contract icon" />
-							<h3>Proces rzemiosła</h3>
-							<p>
-								Na tym etapie zajmujemy się tym, co kochamy najbardziej, czyli
-								wprowadzaniu projektu w życie.
-							</p>
-						</div>
-						<div class="col-3_sm-12 step">
-							<img src="images/bed.png" alt="contract icon" width="85" />
-							<h3>Twoje nowe meble</h3>
-							<p>
-								Gotowe meble bezpiecznie przewozimy w docelowe miejsce. W
-								przypadku całych zabudów, przyjeżdżamy w ustalonym terminie i
-								dokonujemy montażu na miejescu.
-							</p>
-						</div>
-					</div>
-				</section>
-				<!-- REFERENCES -->
-				<section class="grid" id="references">
-					<h2 class="col-12">Referencje</h2>
-					<div class="grid references">
-						<div class="swiper-container ref" id="first">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<blockquote>
-										<p>
-											Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
-											czegoś związanego z meblami, drewnem, fachowej porady.
-											Nigdy się nie zawiodłam!
-										</p>
-									</blockquote>
-									<h3>Anna Jelonek</h3>
-									<p>graficzka</p>
-								</div>
-								<div class="swiper-slide">
-									<blockquote>
-										<p>
-											Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
-											czegoś związanego z meblami, drewnem, fachowej porady.
-											Nigdy się nie zawiodłam!
-										</p>
-									</blockquote>
-									<h3>Anna Jelonek</h3>
-									<p>graficzka</p>
-								</div>
-								<div class="swiper-slide">
-									<blockquote>
-										<p>
-											Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
-											czegoś związanego z meblami, drewnem, fachowej porady.
-											Nigdy się nie zawiodłam!
-										</p>
-									</blockquote>
-									<h3>Anna Jelonek</h3>
-									<p>graficzka</p>
-								</div>
-								<div class="swiper-slide">
-									<blockquote>
-										<p>
-											Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
-											czegoś związanego z meblami, drewnem, fachowej porady.
-											Nigdy się nie zawiodłam!
-										</p>
-									</blockquote>
-									<h3>Anna Jelonek</h3>
-									<p>graficzka</p>
-								</div>
-								<div class="swiper-slide">
-									<blockquote>
-										<p>
-											Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
-											czegoś związanego z meblami, drewnem, fachowej porady.
-											Nigdy się nie zawiodłam!
-										</p>
-									</blockquote>
-									<h3>Anna Jelonek</h3>
-									<p>graficzka</p>
-								</div>
+							<div class="swiper-slide">
+								<blockquote>
+									<p>
+										Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
+										czegoś związanego z meblami, drewnem, fachowej porady.
+										Nigdy się nie zawiodłam!
+									</p>
+								</blockquote>
+								<h3>Anna Jelonek</h3>
+								<p>graficzka</p>
+							</div>
+							<div class="swiper-slide">
+								<blockquote>
+									<p>
+										Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
+										czegoś związanego z meblami, drewnem, fachowej porady.
+										Nigdy się nie zawiodłam!
+									</p>
+								</blockquote>
+								<h3>Anna Jelonek</h3>
+								<p>graficzka</p>
+							</div>
+							<div class="swiper-slide">
+								<blockquote>
+									<p>
+										Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
+										czegoś związanego z meblami, drewnem, fachowej porady.
+										Nigdy się nie zawiodłam!
+									</p>
+								</blockquote>
+								<h3>Anna Jelonek</h3>
+								<p>graficzka</p>
+							</div>
+							<div class="swiper-slide">
+								<blockquote>
+									<p>
+										Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
+										czegoś związanego z meblami, drewnem, fachowej porady.
+										Nigdy się nie zawiodłam!
+									</p>
+								</blockquote>
+								<h3>Anna Jelonek</h3>
+								<p>graficzka</p>
+							</div>
+							<div class="swiper-slide">
+								<blockquote>
+									<p>
+										Wracam do Pana Jerzego regularnie! Jak tylko potrzebuję
+										czegoś związanego z meblami, drewnem, fachowej porady.
+										Nigdy się nie zawiodłam!
+									</p>
+								</blockquote>
+								<h3>Anna Jelonek</h3>
+								<p>graficzka</p>
 							</div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-				</section>
-				<!-- FORM -->
-				<section class="grid" id="contact">
-					<h2 class="col-12">Kontakt</h2>
-					<p class="col-6_sm-12 desc">
-						Zapraszamy do kontaktu mailowego lub telefonicznego.<br />
-						Chętnie odpowiem na każde pytanie!
-					</p>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<!-- FORM -->
+			<section class="grid" id="contact">
+				<h2 class="col-12">Kontakt</h2>
+				<p class="col-6_sm-12 desc sec">
+					Zapraszamy do kontaktu mailowego lub telefonicznego.<br />
+					Chętnie odpowiemy na każde pytanie i rozwiejemy wszelkie
+					wątpliwości.
+				</p>
 
-					<form
-						class="grid-column form"
-						method="POST"
-						action="https://formspree.io/laszlogulasz@icloud.com"
-					>
-						<legend class="col-6_sm-12 floating-label">
-							Formularz kontaktowy
-						</legend>
-						<div class="col-6_sm-12 floating-label">
-							<input class="floating-input" type="text" placeholder=" " />
-							<label>Twoje imię</label>
-						</div>
-						<div class="col-6_sm-12 floating-label">
-							<input
-								class="floating-input"
-								type="email"
-								placeholder=" "
-								pattern="^^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-								required
-							/>
-							<label>Email</label>
-						</div>
-						<div class="col-6_sm-12 floating-label">
-							<input class="floating-input" type="text" placeholder=" " />
-							<label>Temat</label>
-						</div>
-						<div class="col-6_sm-12 floating-label">
-							<textarea
-								class="floating-input floating-textarea"
-								placeholder=" "
-							></textarea>
-							<label>Wiadomość</label>
-						</div>
-						<div class="col-6_sm-12 floating-label">
-							<button class="cta full" type="submit">Wyślij</button>
-						</div>
-					</form>
-					<div class="grid contact">
-						<h3 class="col-12">Dane kontaktowe</h3>
-						<div class="col-4_sm-12 contact-field">
-							<img src="images/outline-contacts-24px.png" alt="chisel icon" />
-							<p>
-								Pracownia Mebli<br />
-								Jerzy Parysz<br />
-								+48 506 148 099
-							</p>
-						</div>
-						<div class="col-4_sm-12 contact-field">
-							<img src="images/outline-email-24px.png" alt="chisel icon" />
-							<p>
-								biuro@parysz.pl<br />
-								jerzy.parysz@gmail.com
-							</p>
-						</div>
-						<div class="col-4_sm-12 contact-field">
-							<img src="images/outline-place-24px.png" alt="chisel icon" />
-							<p>
-								Ul. Hubala Dobrzańskiego 43,<br />
-								Blizne Jasińskiego, 05-082
-							</p>
-						</div>
+				<form class="grid-column form" method="POST" action="https://formspree.io/laszlogulasz@icloud.com">
+					<legend class="col-6_sm-12 floating-label">
+						Formularz kontaktowy
+					</legend>
+					<div class="col-6_sm-12 floating-label">
+						<input class="floating-input" type="text" placeholder=" " />
+						<label>Twoje imię</label>
 					</div>
-					<div class="grid contact">
-						<h3 class="col-12">Jak nas znaleźć</h3>
-						<iframe
-							class="col-12"
-							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9779.630733748303!2d21.01721445!3d52.2087251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1551141572928"
-							width="1110"
-							height="314"
-							frameborder="0"
-							style="border:0"
-							allowfullscreen
-						></iframe>
+					<div class="col-6_sm-12 floating-label">
+						<input class="floating-input" type="email" placeholder=" "
+							pattern="^^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+						<label>Email</label>
 					</div>
-				</section>
-			</main>
-			<footer>
-				<div class="grid">
-					<picture class="col-12">
-						<img src="images/logo.png" alt="parysz logo" />
-					</picture>
-					<div class="col-12 footer-content">
-						<span class="seo">Pracownia Mebli</span>
-						<span class="seo"> Meble na zamówienie</span>
-						<span class="seo"> Meble na wymiar</span>
-						<span class="seo">Stolarz Warszawa</span>
-						<span class="seo">Renowacja mebli</span>
-						<span class="seo">All rights reserved.2019</span>
+					<div class="col-6_sm-12 floating-label">
+						<input class="floating-input" type="text" placeholder=" " />
+						<label>Temat</label>
+					</div>
+					<div class="col-6_sm-12 floating-label">
+						<textarea class="floating-input floating-textarea" placeholder=" "></textarea>
+						<label>Wiadomość</label>
+					</div>
+					<div class="col-6_sm-12 floating-label">
+						<button class="cta full" type="submit">Wyślij</button>
+					</div>
+				</form>
+				<div class="grid contact">
+					<h3 class="col-12">Dane kontaktowe</h3>
+					<div class="col-4_sm-12 contact-field">
+						<img src="images/outline-contacts-24px.png" alt="chisel icon" />
+						<p>
+							Pracownia Mebli<br />
+							Jerzy Parysz<br />
+							<a href="tel:+48506148099">+48 506 148 099</a>
+						</p>
+					</div>
+					<div class="col-4_sm-12 contact-field">
+						<img src="images/outline-email-24px.png" alt="chisel icon" />
+						<p>
+							<a href="mailto:biuro@parysz.pl">biuro@parysz.pl</a><br />
+							<a href="mailto:jerzy.parysz@gmail.com">jerzy.parysz@gmail.com</a>
+						</p>
+					</div>
+					<div class="col-4_sm-12 contact-field">
+						<img src="images/outline-place-24px.png" alt="chisel icon" />
+						<p>
+							<address>Ul. Hubala Dobrzańskiego 43,<br />
+								Blizne Jasińskiego, 05-082</address>
+						</p>
 					</div>
 				</div>
-			</footer>
-		</div>
-
-		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-			<div class="modal__overlay" tabindex="-1" data-custom-close>
-				<div
-					class="modal__container"
-					role="dialog"
-					aria-modal="true"
-					aria-labelledby="modal-1-title"
-				>
-					<header class="modal__header">
-						<button
-							class="modal__close"
-							aria-label="Close modal"
-							data-custom-close
-						></button>
-					</header>
-					<main class="modal__content" id="modal-1-content"></main>
-					<div class="second swiper-container">
-						<div class="swiper-wrapper">
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/800/food/1)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/2)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/3)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/4)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/5)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/6)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/7)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/8)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/9)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/food/10)"
-							></div>
-						</div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
+				<div class="grid contact">
+					<h3 class="col-12">Jak nas znaleźć</h3>
+					<iframe class="col-12"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.7201225526137!2d20.87352065171252!3d52.248467063969144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eca93cbfe892d%3A0x4b38b950fc13fc76!2sHubala+Dobrza%C5%84skiego+43%2C+05-082+Blizne+Jasi%C5%84skiego!5e0!3m2!1spl!2spl!4v1551784602012"
+						width="1110" height="314" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="grid">
+				<picture class="col-12">
+					<img src="images/logo.png" alt="parysz logo" />
+				</picture>
+				<div class="col-12 footer-content">
+					<span class="seo">Pracownia Mebli</span>
+					<span class="seo"> Meble na zamówienie</span>
+					<span class="seo"> Meble na wymiar</span>
+					<span class="seo">Stolarz Warszawa</span>
+					<span class="seo">Renowacja mebli</span>
+					<span class="seo">All rights reserved.2019</span>
 				</div>
 			</div>
-		</div>
+		</footer>
+	</div>
 
-		<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
-			<div class="modal__overlay" tabindex="-1" data-custom-close>
-				<div
-					class="modal__container"
-					role="dialog"
-					aria-modal="true"
-					aria-labelledby="modal-1-title"
-				>
-					<header class="modal__header">
-						<button
-							class="modal__close"
-							aria-label="Close modal"
-							data-custom-close
-						></button>
-					</header>
-					<main class="modal__content" id="modal-1-content"></main>
-					<div class="second swiper-container">
-						<div class="swiper-wrapper">
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/800/people/1)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/2)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/3)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/4)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/5)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/6)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/7)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/8)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/9)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/people/10)"
-							></div>
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-				</div>
+						<figcaption>
+							<p>Jesionowa zabudowa kuchni</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
-			<div class="modal__overlay" tabindex="-1" data-custom-close>
-				<button
-					class="modal__close"
-					aria-label="Close modal"
-					data-custom-close
-				></button>
-				<div
-					class="modal__container"
-					role="dialog"
-					aria-modal="true"
-					aria-labelledby="modal-1-title"
-				>
-					<header class="modal__header"></header>
-					<main class="modal__content" id="modal-1-content"></main>
-					<div class="second swiper-container">
-						<div class="swiper-wrapper">
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/1)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/2)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/3)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/4)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/5)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/6)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/7)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/8)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/9)"
-							></div>
-							<div
-								class="swiper-slide"
-								style="background-image:url(http://lorempixel.com/600/400/nature/10)"
-							></div>
+	<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-				</div>
+						<figcaption>
+							<p>Jasna kuchnia sosnowa</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
 			</div>
 		</div>
+	</div>
 
-		<!--build:js js/main.min.js -->
-		<script src="js/lib/micromodal.min.js"></script>
-		<script src="js/lib/swiper.min.js"></script>
-		<script src="js/lib/a-library.js"></script>
+	<div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Dębowy gabinet</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
 
-		<script></script>
-		<script src="js/lib/another-library.js"></script>
-		<script src="js/main.js"></script>
-		<!-- endbuild -->
-	</body>
+	<div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Stołek konkursowy - stool</p>
+							<small>Projektant: Agnieszka Błąkowska</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Dębowy mebel wystawowy</p>
+							<small>Projektant: Katarzyna Dzięcioł Korbado</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Orzechowy stół modułowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Komplet gabinetowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-8" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Dębowa zabudowa łazienki</p>
+							<small>Projektant: Robert Żbikowski</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-9" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-custom-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+				<header class="modal__header">
+					<button class="modal__close" aria-label="Close modal" data-custom-close></button>
+				</header>
+				<main class="modal__content" id="modal-1-content">
+					<figure>
+						<div class="second swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/800/food/1)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/2)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/3)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/4)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/5)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/6)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/7)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/8)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/9)"></div>
+								<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/400/food/10)"></div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<figcaption>
+							<p>Dworek Jesionowy</p>
+							<small>Projektant: Jarek Tomaszewski</small>
+						</figcaption>
+					</figure>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/lib/micromodal.min.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/library.js"></script>
+	<!-- endbuild -->
+</body>
+
 </html>
